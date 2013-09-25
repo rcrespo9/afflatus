@@ -1,0 +1,9 @@
+<%= form_for(:photo_inspired, url: user_photo_inspired_create_path) do |form| %>
+  Creation Title:
+  <br>
+  <%= form.text_field :creation_title %>
+  <br>
+  <%= form.text_area :writing, :rows => 8, :cols => 60 %>
+  <br>
+  <%= form.submit %>
+<% end %>

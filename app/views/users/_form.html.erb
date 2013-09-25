@@ -1,0 +1,17 @@
+<%= form_for user do |f| %>
+
+  <div><%= f.label "Location" %>
+  <%= f.text_field :location %></div>
+  <div><%= f.label "About Me" %>
+  <%= f.text_area :about, :rows => 8, :cols => 60 %></div>
+    
+ <!-- File Upload Field -->
+  <%= form_for @user, :url => user_path, :html => { :multipart => true } do |f| %>
+  <div><%= f.label "Profile Picture" %><br />
+  <%= f.file_field 'user_avatar_upload[avatar]', :multiple => true %></div>
+ <!--File Upload Field End  -->
+  
+  <%= f.submit %>
+<% end %>
+ <% end %>
+
