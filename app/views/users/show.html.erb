@@ -1,10 +1,9 @@
-<br>
-<%= image_tag @user.avatar.url %>
 <h3>Username: <%= @user.username %></h3>
-<h3>First Name: <%= @user.first_name %></h3><h3><%= @user.last_name %></h3>
+<h3>First Name: <%= @user.first_name %></h3>
+<h3>Last Name: <%= @user.last_name %></h3>
 <h3>Gender: <%= @user.gender %></h3>
 <h3>Location: <%= @user.location %></h3>
-About: <%= @user.about %>
+<h3>About: <h3> <%= @user.about %>
 <br>
 
 <% if !@user.photo_inspireds.empty? %>

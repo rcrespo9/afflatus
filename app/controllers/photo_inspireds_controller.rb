@@ -1,4 +1,5 @@
 class PhotoInspiredsController < ApplicationController
+	
 
 	def new
         @user_id = params[:user_id]
