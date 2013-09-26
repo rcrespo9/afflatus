@@ -14,4 +14,4 @@
 <% end %>
 	<p><%= button_to "Delete", user_music_inspired_path(@music_inspired), :data => { :confirm => "Are you sure?" }, :method => :delete %></p>
 
-	<a href="/users/user_id">Cancel</a>
+	<a href="/users/<%= @user.id %>/music_inspireds/<%= @music_inspired.id %>">Cancel</a>

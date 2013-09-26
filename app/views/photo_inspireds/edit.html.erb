@@ -14,4 +14,4 @@
 <% end %>
 	<p><%= button_to "Delete", user_photo_inspired_path(@photo_inspired), :data => { :confirm => "Are you sure?" }, :method => :delete %></p>
 
-	<a href="/users/user_id">Cancel</a>
+<a href="/users/<%= @user.id %>/photo_inspireds/<%= @photo_inspired.id %>">Cancel</a>
