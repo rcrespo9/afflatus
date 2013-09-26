@@ -1,7 +1,15 @@
 class PhotoInspiredsController < ApplicationController
+	require 'flickraw'
 
 
 	def new
+		FlickRaw.api_key="7fecf33602d53f65944d11cbe88fc6b7"
+		FlickRaw.shared_secret="0f5c259d011fdf12"
+
+		@photo = flickr.interestingness.getList( :per_page => 100 ).to_a.sample
+		@photo_info = flickr.photos.getInfo(:photo_id => @photo.id)
+		
+
         @user_id = params[:user_id]
 	end
 
