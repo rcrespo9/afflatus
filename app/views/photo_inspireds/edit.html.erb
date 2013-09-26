@@ -1,3 +1,17 @@
-<h2>Editing Creation:</h2>
+<div class="edit-photo-inspired"></div>
+<%= form_for [@user, @photo_inspired] do |f| %>
+	<h2>Edit Photo Inspired</h2>
+	<div class="photo_inspired-creation_title_input_container">
+		<label for="photo_inspired[creation_title]">Creation Title:</label>
+		<input type="text" name="photo_inspired[creation_title]" value="<%= @photo_inspired.creation_title %>"/>
+	</div>
+	<div class="photo_inspired-writing_input_container">
+		<label for="photo_inspired[writing]">Writing:</label>
+		<input type="text" name="photo_inspired[writing]" value="<%= @photo_inspired.writing %>"/>
+	</div>
+	<button type="submit">Submit</button>
+	<br>
+<% end %>
+	<p><%= button_to "Delete", user_photo_inspired_path(@photo_inspired), :data => { :confirm => "Are you sure?" }, :method => :delete %></p>
 
-<%= render partial: "form", locals: {photo_inspired: @photo_inspired} %>
+	<a href="/users/user_id">Cancel</a>

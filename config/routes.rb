@@ -4,12 +4,12 @@ Afflatus::Application.routes.draw do
   root :to => 'welcome#index'
 
   resources :users, except: [:destroy, :new, :create] do
-  	resources :photo_inspireds, except: [:index] do
-  		match '/create/:id',  :to => 'photo_inspireds#create'  , :as => :create
-  		end 
+  	resources :photo_inspireds, except: [:index]
+  	resources :music_inspireds, except: [:index]
 end
 
   resources :dashboard, only: [:index]
+  resources :select_muse, only: [:index]
 
   
 end

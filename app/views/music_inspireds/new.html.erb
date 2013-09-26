@@ -1,0 +1,14 @@
+<div class="new-music_inspired">
+<form class="music-inspired-form" action="/users/<%= @user_id %>/music_inspireds" method="post">
+	<h2>Create Music Inspired</h2>
+  <div id="creation_title">
+	<label for="music_inspired[creation_title]">Creation Title:</label>
+	<input type="text" name="music_inspired[creation_title]" autofocus>
+  </div>
+  <div id="writing_area">
+	<label for="music_inspired[writing]">Writing:</label>
+	<input type="text" name="music_inspired[writing]">
+  </div>
+	<input type="submit" value="Add Creation"/>
+</form>
+</div>

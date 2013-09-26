@@ -1,2 +1,4 @@
-  <h4><%= photo_inspireds.creation_title %></h4>
-  <%= photo_inspireds.writing %>
+  <h4><%= @photo_inspired.creation_title %></h4>
+  	  <%= @photo_inspired.writing %>
+
+  	<a href="/users/<%= @user.id %>/photo_inspireds/<%= @photo_inspired.id %>/edit">Edit</a>

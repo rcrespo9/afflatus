@@ -1,0 +1,17 @@
+<div class="edit-music-inspired"></div>
+<%= form_for [@user, @music_inspired] do |f| %>
+	<h2>Edit Music Inspired</h2>
+	<div class="music_inspired-creation_title_input_container">
+		<label for="music_inspired[creation_title]">Creation Title:</label>
+		<input type="text" name="music_inspired[creation_title]" value="<%= @music_inspired.creation_title %>"/>
+	</div>
+	<div class="music_inspired-writing_input_container">
+		<label for="music_inspired[writing]">Writing:</label>
+		<input type="text" name="music_inspired[writing]" value="<%= @music_inspired.writing %>"/>
+	</div>
+	<button type="submit">Submit</button>
+	<br>
+<% end %>
+	<p><%= button_to "Delete", user_music_inspired_path(@music_inspired), :data => { :confirm => "Are you sure?" }, :method => :delete %></p>
+
+	<a href="/users/user_id">Cancel</a>
