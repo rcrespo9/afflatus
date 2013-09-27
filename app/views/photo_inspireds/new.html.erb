@@ -2,7 +2,7 @@
 <form class="photo-inspired-form" action="/users/<%= @user_id %>/photo_inspireds" method="post">
 	
     	<img src="<%= FlickRaw.url_m(@photo_info) %>">
-
+    	<br>
     	 <%= link_to "New Photo", new_user_photo_inspired_path(@user_id) %> 
 
 	<h2>Create Photo Inspired</h2>
@@ -13,6 +13,10 @@
  <div id="writer_name">
 	<label for="photo_inspired[writer_name]">Your Name:</label>
 	<input type="text" name="photo_inspired[writer_name]">
+  </div>
+  <div id="medium">
+	<label for="photo_inspired[writer_name]">Medium:</label>
+	<input type="text" name="photo_inspired[medium]">
   </div>
  <div id="img_desc">
 	<label for="photo_inspired[img_desc]">Image Description:</label>
