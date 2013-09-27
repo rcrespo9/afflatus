@@ -1,1 +1,23 @@
-styles.css
+.new-photo_inspired {
+	margin-right: 33%;
+	float: right;
+}
+
+.new-music_inspired {
+	margin-right: 35%;
+	float: right;
+}
+
+.activity_feed {
+	text-align: center;
+}
+
+.select_muse {
+	text-align: center;
+}
+
+.select_muse a {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 20px;
+}
