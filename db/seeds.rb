@@ -7,4 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.destroy_all
-
+PhotoInspired.destroy_all
+MusicInspired.destroy_all

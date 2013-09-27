@@ -4,8 +4,8 @@ class MusicInspiredsController < ApplicationController
 	def new
 		client = Soundcloud.new(:client_id => '550f5d8ddb4f4118734eae23a5c974c8')
 
-		track_url = 'https://soundcloud.com/barbicancentre/sets/barbican-classical-music'
-		@embed_info = client.get('/oembed', :url => track_url)
+		track_url = 'https://soundcloud.com/emiclassicsus/sets/greatest-classical-music-ever'
+		@embed_info = client.get('/oembed', show_comments: false, auto_play: true, :url => track_url)
 
 		
         @user_id = params[:user_id]

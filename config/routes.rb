@@ -7,9 +7,7 @@ Afflatus::Application.routes.draw do
   	resources :photo_inspireds, except: [:index]
   	resources :music_inspireds, except: [:index]
 end
-
-  resources :dashboard, only: [:index]
-  resources :select_muse, only: [:index]
-
   
+  get '/dashboard', :to => 'dashboard#index'
+  get '/select_muse', :to => 'select_muse#home'
 end
