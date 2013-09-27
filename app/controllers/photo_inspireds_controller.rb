@@ -49,6 +49,6 @@ class PhotoInspiredsController < ApplicationController
 			photo_inspired = PhotoInspired.find(params[:id])
 			photo_inspired.destroy
 			flash[:notice] = :success
-		    redirect_to dashboard_index_path
+		    redirect_to dashboard_path
 	end
 end

@@ -47,6 +47,6 @@ class MusicInspiredsController < ApplicationController
 			music_inspired = MusicInspired.find(params[:id])
 			music_inspired.destroy
 			flash[:notice] = :success
-		    redirect_to dashboard_index_path
+		    redirect_to dashboard_path
 	end
 end

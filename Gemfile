@@ -16,3 +16,5 @@ gem 'rails_12factor', group: :production
 gem 'flickraw'
 
 gem 'soundcloud'
+
+gem "twitter-bootstrap-rails"

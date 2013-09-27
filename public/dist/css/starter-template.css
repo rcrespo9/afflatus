@@ -1,0 +1,20 @@
+body {
+  padding-top: 180px;
+  background: url(/images/reignofstars.jpg);
+  margin: 0;
+  background-size: 1440px 800px;
+  background-repeat:no-repeat;
+  display: compact; 
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/*html { 
+  background: url(/images/milkyway.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
