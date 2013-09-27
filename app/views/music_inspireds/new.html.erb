@@ -1,4 +1,6 @@
 <%= raw(@embed_info['html']) %>
+<br>
+<%= link_to "Random Song", new_user_music_inspired_path(@user_id) %>
 
 <div class="new-music_inspired">
 <form class="music-inspired-form" action="/users/<%= @user_id %>/music_inspireds" method="post">
