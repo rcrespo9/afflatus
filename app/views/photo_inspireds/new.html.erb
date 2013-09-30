@@ -1,31 +1,24 @@
-<div class="new-photo_inspired">
-<form class="photo-inspired-form" action="/users/<%= @user_id %>/photo_inspireds" method="post">
-	
-    	<img src="<%= FlickRaw.url_m(@photo_info) %>">
-    	<br>
-    	 <%= link_to "New Photo", new_user_photo_inspired_path(@user_id) %> 
-
-	<h2>Create Photo Inspired</h2>
-  <div id="creation_title">
+<div class="photography container">
+	<h2>Photography Prompt</h2>
+	<img src="<%= FlickRaw.url_m(@photo_info) %>">
+   	<br>
+   	<%= link_to "New Photo", new_user_photo_inspired_path(@user_id) %>
+<form class="photography-prompt" action="/users/<%= @user_id %>/photo_inspireds" method="post"> 
 	<label for="photo_inspired[creation_title]">Title:</label>
 	<input type="text" name="photo_inspired[creation_title]" autofocus>
-  </div>
- <div id="writer_name">
+
 	<label for="photo_inspired[writer_name]">Your Name:</label>
 	<input type="text" name="photo_inspired[writer_name]">
-  </div>
-  <div id="medium">
+
 	<label for="photo_inspired[writer_name]">Medium:</label>
 	<input type="text" name="photo_inspired[medium]">
-  </div>
- <div id="img_desc">
+
 	<label for="photo_inspired[img_desc]">Image Description:</label>
 	<input type="text" name="photo_inspired[img_desc]">
-  </div>
-  <div id="writing_area">
+
 	<textarea rows="4" cols="50" name="photo_inspired[writing]">
 	</textarea>
-  </div>
+	<br>
 	<input type="submit" value="Add Creation"/>
 </form>
 <%= link_to "Cancel", dashboard_path%>

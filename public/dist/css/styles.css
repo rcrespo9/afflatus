@@ -23,7 +23,7 @@ body {
 	font-size: 25px;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Vollkorn', serif;
 }
 /*end welcome page*/
@@ -75,6 +75,7 @@ h1, h2 {
 }
 /*end user sign in, sign up, and edit account forms*/
 
+
 /*dashboard activity feed*/
 
 .feed {
@@ -91,11 +92,12 @@ h1, h2 {
 }
 /*end dashboard activity feed*/
 
+
 /*select a muse*/
 .select_muse {
 	max-width: 700px;
     padding: 19px 29px 29px;
-	margin: 90px auto 20px;
+	margin: 100px auto 20px;
 	background-color: rgba(0,0,0,0.4);
   -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
@@ -103,6 +105,7 @@ h1, h2 {
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
     box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    text-align: center;
 }
 
 .select_muse .muse_photo {
@@ -130,20 +133,36 @@ h1, h2 {
 .select_muse .muse_music:hover {
 	-webkit-filter: brightness(100%);
 }
-
-
 /*end select a muse*/
 
 
-.new-photo_inspired {
-    position:absolute;
-    width:300px;
-    height:300px;
-    z-index:15;
-    top:35%;
-    left:50%;
-    margin:155px auto 20px;
+/*photography*/
+
+.photography {
+	max-width: 700px;
+    padding: 19px 29px 29px;
+	margin: 100px auto 20px;
+	background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+    border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
 }
+
+.photography .photography-prompt textarea {
+   background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+   height: 400px;
+   width: 400px;
+   font: normal 14px verdana;
+   line-height: 25px;
+   padding: 3px 10px;
+   border: solid 1px #ddd;
+   color: #000;
+}
+/*end photography*/
+
 
 .new-music_inspired {
 	margin-right: 35%;
@@ -151,14 +170,4 @@ h1, h2 {
 	margin-bottom: 10%;
 }
 
-.select_muse {
-	margin: 155px auto 20px;
-	text-align: center;
-}
-
-.select_muse a {
-	color: #ffffff;
-	text-transform: uppercase;
-	font-size: 20px;
-}
 
