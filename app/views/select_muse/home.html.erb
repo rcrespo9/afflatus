@@ -1,5 +1,12 @@
-<div class="select_muse">
-<%= link_to "Be Inspired: Photography", new_user_photo_inspired_path(current_user.id) %><br>
-
-<%= link_to "Be Inspired: Music", new_user_music_inspired_path(current_user.id) %>
+<div class="select_muse container-fluid">
+	<h2>Select a Muse</h2>
+	<br>
+<div class="row-fluid">
+	<div class="muse_photo span6 offsetHalf block">
+	<%= link_to (image_tag "/images/cumbrianresized.jpg"), new_user_photo_inspired_path(current_user.id) %>
+	</div>
+	<div class="muse_music span6 block">
+	<%= link_to (image_tag "/images/yamaharesized.jpg"), new_user_music_inspired_path(current_user.id) %>
+	</div>
+</div>
 </div>

@@ -1,7 +1,148 @@
+/*welcome page*/
+html {
+	min-height: 100%;
+}
+body {
+    background: url("/images/reignofstars.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	background-color: #333;
+	font-family: "Oxygen", sans-serif;
+	min-height: 100%;
+}
+
+.marketing {
+  padding: 200px 15px;
+  text-align: center;
+}
+
+.navbar-brand {
+	font-size: 25px;
+}
+
+h1, h2 {
+	font-family: 'Vollkorn', serif;
+}
+/*end welcome page*/
+
+
+/* User sign in, sign up, and edit account forms. */
+.border-form-div {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 155px auto 20px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.border-form-div h2 {
+	color: #fff;
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.border-form-div .checkbox:hover {
+	color: #999999;
+}
+
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+.border-form-div a {
+	color: #fff;
+}
+
+.border-form-div a:hover {
+	color: #999999;
+	text-decoration: none;
+}
+/*end user sign in, sign up, and edit account forms*/
+
+/*dashboard activity feed*/
+
+.feed {
+	max-width: 645px;
+    padding: 19px 29px 29px;
+	margin: 90px auto 20px;
+	background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+    border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+/*end dashboard activity feed*/
+
+/*select a muse*/
+.select_muse {
+	max-width: 700px;
+    padding: 19px 29px 29px;
+	margin: 90px auto 20px;
+	background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+    border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.select_muse .muse_photo {
+	-webkit-filter: brightness(25%);
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.select_muse .muse_photo:hover {
+	-webkit-filter: brightness(100%);
+}
+
+.select_muse .muse_music {
+	-webkit-filter: brightness(25%);
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.select_muse .muse_music:hover {
+	-webkit-filter: brightness(100%);
+}
+
+
+/*end select a muse*/
+
+
 .new-photo_inspired {
-	margin-right: 33%;
-	margin-bottom: 15%;
-	float: right;
+    position:absolute;
+    width:300px;
+    height:300px;
+    z-index:15;
+    top:35%;
+    left:50%;
+    margin:155px auto 20px;
 }
 
 .new-music_inspired {
@@ -10,11 +151,8 @@
 	margin-bottom: 10%;
 }
 
-.activity_feed {
-	text-align: center;
-}
-
 .select_muse {
+	margin: 155px auto 20px;
 	text-align: center;
 }
 
@@ -23,3 +161,4 @@
 	text-transform: uppercase;
 	font-size: 20px;
 }
+

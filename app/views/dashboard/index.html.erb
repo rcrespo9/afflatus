@@ -1,9 +1,15 @@
-<div class="activity_feed">
-	<h1>Activity Feed</h1>
+<div class="feed container">
+
+<h2>Recent Activity</h2>
+<br>
+<p>
 <% @items.each do |item| %>
-<%= item.writer_name %> wrote a <%= item.medium %> called &quot;<%= item.creation_title %>&quot; on <%= item.created_at %>.
+<span class="glyphicon glyphicon-pencil">&nbsp;</span><%= item.writer_name %> wrote a <%= item.medium %> called &quot;<%= item.creation_title %>&quot; on <%= item.created_at %>.
+<hr>
+</p>
 <br>
 <br>
 <% end %>
 </div>
+
 

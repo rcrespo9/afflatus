@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
@@ -17,9 +16,9 @@
     <link href="/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/dist/css/starter-template.css" rel="stylesheet">
-    <link href="signin.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/dist/css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,15 +32,15 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-<!--           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button> -->
+          </button>
           <a class="navbar-brand" href="/">Afflatus</a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav nav-pills pull-right">
             <!-- <li class="active"><a href="#">Home</a></li> -->
             <li><%= link_to "Dashboard", dashboard_path if user_signed_in? %></li>
             <li><%= link_to "Be Inspired", select_muse_path if user_signed_in? %></li>

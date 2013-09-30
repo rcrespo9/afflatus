@@ -1,10 +1,12 @@
+<div class="border-form-div">
 <%= form_for user do |f| %>
 
   <div><%= f.label "Location" %>
   <%= f.text_field :location %></div>
   <div><%= f.label "About Me" %>
   <%= f.text_area :about, :rows => 8, :cols => 60 %></div>  
-  <%= f.submit %>
+  <%= f.submit :class=>'btn btn-primary' %>
  <% end %>
+ <div>
 
 <!-- , html: {class: "" } -->
