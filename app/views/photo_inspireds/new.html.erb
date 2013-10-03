@@ -1,26 +1,30 @@
-<div class="photography container">
-	<h2>Photography Prompt</h2>
+<div class="photography container-fluid">
+	<div class="row-fluid">
+	<div class="col-md-4 col-md-offset-4">
+	<h2 class="text-center">Photography Prompt</h2>
+	<br>
 	<img src="<%= FlickRaw.url_m(@photo_info) %>">
    	<br>
    	<%= link_to "New Photo", new_user_photo_inspired_path(@user_id) %>
+   	<br>
+   	<br>
 <form class="photography-prompt" action="/users/<%= @user_id %>/photo_inspireds" method="post"> 
-	<label for="photo_inspired[creation_title]">Title:</label>
-	<input type="text" name="photo_inspired[creation_title]" autofocus>
-
-	<label for="photo_inspired[writer_name]">Your Name:</label>
-	<input type="text" name="photo_inspired[writer_name]">
-
-	<label for="photo_inspired[writer_name]">Medium:</label>
-	<input type="text" name="photo_inspired[medium]">
-
-	<label for="photo_inspired[img_desc]">Image Description:</label>
-	<input type="text" name="photo_inspired[img_desc]">
-
-	<textarea rows="4" cols="50" name="photo_inspired[writing]">
+	<input type="text" name="photo_inspired[creation_title]" placeholder="Title" autofocus>
+	<br>
+	<input type="text" name="photo_inspired[writer_name]" placeholder="Your Name">
+	<br>
+	<input type="text" name="photo_inspired[medium]" placeholder="Medium">
+	<br>
+	<input type="text" name="photo_inspired[img_desc]" placeholder="Image Description">
+	<br>
+	<textarea rows="4" cols="40" name="photo_inspired[writing]" placeholder="Start writing!">
 	</textarea>
 	<br>
-	<input type="submit" value="Add Creation"/>
+	<br>
+	<input type="submit" class="btn btn-primary" value="Finished!"/>	
 </form>
-<%= link_to "Cancel", dashboard_path%>
+</div>
+</div>
+<%= link_to "Cancel", dashboard_path %>
 </div>
  

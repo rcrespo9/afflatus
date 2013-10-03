@@ -1,36 +1,33 @@
+<div class="soundcloud">
 <%= raw(@embed_info['html']) %>
 <br>
 <%= link_to "Random Song", new_user_music_inspired_path(@user_id) %>
+</div>
+<div class="classical-music container-fluid">
+<div class="row-fluid">
+<div class="col-md-4 col-md-offset-4">
+<h2 class"text-center">Classical Music Prompt</h2>
+<br>
+<form class="classical-music-prompt" action="/users/<%= @user_id %>/music_inspireds" method="post">
 
-<div class="new-music_inspired">
-<form class="music-inspired-form" action="/users/<%= @user_id %>/music_inspireds" method="post">
-	<h2>Create Music Inspired</h2>
-  <div id="creation_title">
-	<label for="music_inspired[creation_title]">Title:</label>
-	<input type="text" name="music_inspired[creation_title]" autofocus>
-  </div>
-   <div id="writer_name">
-	<label for="music_inspired[writer_name]">Your Name:</label>
-	<input type="text" name="music_inspired[writer_name]">
-  </div>
-     <div id="medium">
-	<label for="music_inspired[medium]">Medium:</label>
-	<input type="text" name="music_inspired[medium]">
-  </div>
-  <div id="song_title">
-	<label for="music_inspired[song_title]">Song Title:</label>
-	<input type="text" name="music_inspired[song_title]">
-  </div>
-  <div id="artist_name">
-	<label for="music_inspired[artist_name]">Artist's Name:</label>
-	<input type="text" name="music_inspired[artist_name]">
-  </div>
-  <div id="writing_area">
-	<textarea rows="4" cols="50" name="music_inspired[writing]">
+	<input type="text" name="music_inspired[creation_title]" placeholder="Title" autofocus>
+
+	<input type="text" name="music_inspired[writer_name]" placeholder="Your Name">
+ 
+	<input type="text" name="music_inspired[medium]" placeholder="Medium">
+  
+	<input type="text" name="music_inspired[song_title]" placeholder="Song Title">
+ 
+	<input type="text" name="music_inspired[artist_name]" placeholder="Artist's Name">
+
+  	<textarea rows="4" cols="50" name="music_inspired[writing]" placeholder="Start writing!">
 	</textarea>
-	  </div>
-	<input type="submit" value="Add Creation"/>
+	<br>
+	<br>
+	<input type="submit" class="btn btn-primary" value="Finished!"/>
 </form>
+</div>
+</div>
 <%= link_to "Cancel", dashboard_path%>
 </div>
 

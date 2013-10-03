@@ -137,37 +137,112 @@ h1, h2, h3 {
 
 
 /*photography*/
-
 .photography {
-	max-width: 700px;
-    padding: 19px 29px 29px;
-	margin: 100px auto 20px;
-	background-color: rgba(0,0,0,0.4);
+  max-width: 700px;
+  padding: 19px 29px 29px;
+  margin: 100px auto 20px;
+  background-color: rgba(0,0,0,0.4);
   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-    border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.photography .photography-prompt {
+  margin: 0 auto;
+  float: none;
+}
+
+.photography .photography-prompt input {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 2px 9px;
 }
 
 .photography .photography-prompt textarea {
    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
-   height: 400px;
-   width: 400px;
    font: normal 14px verdana;
    line-height: 25px;
    padding: 3px 10px;
    border: solid 1px #ddd;
    color: #000;
 }
+
+.photography a {
+  color: #fff;
+}
+
+.photography a:hover {
+  color: #999999;
+  text-decoration: none;
+}
 /*end photography*/
 
 
-.new-music_inspired {
-	margin-right: 35%;
-	float: right;
-	margin-bottom: 10%;
+/*classical music*/
+.soundcloud {
+  padding-top: 100px;
 }
+
+.soundcloud a {
+  color: #fff;
+}
+
+.soundcloud a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.classical-music {
+	max-width: 650px;
+  padding: 19px 29px 29px;
+	margin: 50px auto 20px;
+	background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+
+.classical-music .classical-music-prompt {
+  margin: 0 auto;
+  float: none;
+}
+
+.classical-music .classical-music-prompt input {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 2px 9px;
+}
+
+.classical-music .classical-music-prompt textarea {
+   background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+   font: normal 14px verdana;
+   line-height: 25px;
+   padding: 3px 10px;
+   margin-right: -20px; 
+   border: solid 1px #ddd;
+   color: #000;
+}
+
+.classical-music a {
+  color: #fff;
+}
+
+.classical-music a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+/*end classical music*/
+
+
+
 
 
