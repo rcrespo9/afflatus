@@ -1,3 +1,8 @@
+<div class = "users container">
+	<h2 class="text-center">Writers</h2>
+	<br>
 <% @users.each do |user| %>
-  <h3><%= link_to("#{user.full_name}", user_path(user)) %></h3>
+  <h4 class="text-center"><span class="glyphicon glyphicon-user">&nbsp;</span><%= link_to("#{user.full_name}", user_path(user)) %></h4>
   <% end %>
+  <br>
+</div>

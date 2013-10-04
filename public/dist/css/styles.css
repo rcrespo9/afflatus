@@ -23,7 +23,7 @@ body {
 	font-size: 25px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: 'Vollkorn', serif;
 }
 /*end welcome page*/
@@ -241,6 +241,52 @@ h1, h2, h3 {
   text-decoration: none;
 }
 /*end classical music*/
+
+/*users*/
+.users {
+  max-width: 400px;
+    padding: 19px 29px 29px;
+  margin: 90px auto 20px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+    border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.users a {
+  color: #fff;
+}
+
+.users a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.profile {
+   max-width: 700px;
+  padding: 19px 29px 29px;
+  margin: 90px auto 20px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+    border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.profile a {
+  color: #fff;
+}
+
+.profile a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+/*end users*/
 
 
 
