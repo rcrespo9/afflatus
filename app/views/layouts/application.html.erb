@@ -47,9 +47,9 @@
             <li><%= link_to "Writers", users_path if user_signed_in? %></li>
             <li><%= link_to "View Profile", user_path(current_user.id) if user_signed_in? %></li>
             <li><%= link_to "View Account", edit_user_registration_path if user_signed_in? %></li>
-              <% if user_signed_in? %>
-  				<li><%= "You are logged in as #{current_user.full_name}" %></li>
-  				<li><%= button_to "Sign Out", destroy_user_session_path, method: :delete %></li>	
+            <% if user_signed_in? %>
+  				<li class="status"><%= "You are logged in as #{current_user.full_name}" %></li>
+  				<li><%= button_to "Sign Out", destroy_user_session_path, method: :delete, :class => "sign-out-button btn btn-primary btn-sm" %></li>	
 			  <% else %>
   			  	<li><%= link_to "Sign Up", new_user_registration_path %></li>
   			    <li><%= link_to "Log In", new_user_session_path %></li>

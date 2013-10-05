@@ -2,7 +2,7 @@
 	<h2 class="text-center">Writers</h2>
 	<br>
 <% @users.each do |user| %>
-  <h4 class="text-center"><span class="glyphicon glyphicon-user">&nbsp;</span><%= link_to("#{user.full_name}", user_path(user)) %></h4>
+  <h4><span class="glyphicon glyphicon-user">&nbsp;</span><%= link_to("#{user.full_name}", user_path(user)) %></h4><hr>
   <% end %>
   <br>
 </div>

@@ -73,6 +73,15 @@ h1, h2, h3, h4 {
 	color: #999999;
 	text-decoration: none;
 }
+
+.sign-out-button {
+  border-radius: 20px;
+}
+
+.status {
+  line-height: 39.9px;
+  padding-right: 6px;
+}
 /*end user sign in, sign up, and edit account forms*/
 
 
@@ -138,7 +147,7 @@ h1, h2, h3, h4 {
 
 /*photography*/
 .photography {
-  max-width: 700px;
+  max-width: 625px;
   padding: 19px 29px 29px;
   margin: 100px auto 20px;
   background-color: rgba(0,0,0,0.4);
@@ -178,6 +187,72 @@ h1, h2, h3, h4 {
 .photography a:hover {
   color: #999999;
   text-decoration: none;
+}
+
+.photography-show {
+  max-width: 550px;
+  padding: 19px 29px 29px;
+  margin: 100px auto 20px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.photography-show a {
+  font-size: 17px;
+  color: #fff;
+}
+
+.photography-show a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.photo-edit {
+  max-width: 500px;
+  padding: 19px 29px 29px;
+  margin: 140px auto 20px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.photo-edit h2 {
+  color: #fff;
+}
+
+
+.photo-edit input[type="text"],
+.photo-edit textarea, {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+.photo-edit a {
+  color: #fff;
+}
+
+.photo-edit a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.photo-edit table {
+  border: 0;
+}
+
+.photo-edit td { 
+  padding: 16px;
 }
 /*end photography*/
 
@@ -240,7 +315,74 @@ h1, h2, h3, h4 {
   color: #999999;
   text-decoration: none;
 }
+
+.classical-music-show {
+  max-width: 550px;
+  padding: 19px 29px 29px;
+  margin: 100px auto 20px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.classical-music-show a {
+  color: #fff;
+  font-size: 17px;
+}
+
+.classical-music-show a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.classical-music-edit {
+  max-width: 500px;
+  padding: 19px 29px 29px;
+  margin: 140px auto 20px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.classical-music-edit h2 {
+  color: #fff;
+}
+
+
+.classical-music-edit input[type="text"],
+.classical-music-edit textarea, {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+.classical-music-edit a {
+  color: #fff;
+}
+
+.classical-music-edit a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+
+.classical-music-edit table {
+  border: 0;
+}
+
+.classical-music-edit td { 
+  padding: 16px;
+}
 /*end classical music*/
+
 
 /*users*/
 .users {
@@ -266,7 +408,7 @@ h1, h2, h3, h4 {
 }
 
 .profile {
-   max-width: 700px;
+   max-width: 500px;
   padding: 19px 29px 29px;
   margin: 90px auto 20px;
   background-color: rgba(0,0,0,0.4);
@@ -285,6 +427,10 @@ h1, h2, h3, h4 {
 .profile a:hover {
   color: #999999;
   text-decoration: none;
+}
+
+.profile-edit {
+  margin-top: 60px;
 }
 /*end users*/
 
