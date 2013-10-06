@@ -441,6 +441,10 @@ h1, h2, h3, h4 {
   text-decoration: none;
 }
 
+.edit-profile {
+  font-size: 17px;
+}
+
 .profile-edit {
   margin-top: 60px;
 }
