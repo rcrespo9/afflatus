@@ -1,4 +1,6 @@
 class PhotoInspiredsController < ApplicationController
+	before_filter :authenticate_user!, only: [:new, :create]
+	before_filter :verify_user, :only => :edit
 	require 'flickraw'
 
 
@@ -51,4 +53,11 @@ class PhotoInspiredsController < ApplicationController
 			flash[:notice] = :success
 		    redirect_to dashboard_path
 	end
+
+	private 
+  #prevents non-owners from editing someone else's creations
+    def verify_user
+  	@photo_inspired = PhotoInspired.find(params[:id])
+  	current_user.id == @photo_inspired.user_id ? @photo_inspired : redirect_to(root_url)
+    end
 end

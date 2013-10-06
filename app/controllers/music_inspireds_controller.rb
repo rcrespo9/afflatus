@@ -1,4 +1,6 @@
 class MusicInspiredsController < ApplicationController
+	before_filter :authenticate_user!, only: [:new, :create]
+	before_filter :verify_user, only: :edit
 	require 'soundcloud'
 
 	def new
@@ -49,4 +51,11 @@ class MusicInspiredsController < ApplicationController
 			flash[:notice] = :success
 		    redirect_to dashboard_path
 	end
+
+	private 
+  #prevents non-owners from editing someone else's creations
+    def verify_user
+  	@music_inspired = MusicInspired.find(params[:id])
+  	current_user.id == @music_inspired.user_id ? @music_inspired : redirect_to(root_url)
+    end
 end
