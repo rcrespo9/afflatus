@@ -5,7 +5,7 @@
 	<br>
 	<img src="<%= FlickRaw.url_m(@photo_info) %>">
    	<br>
-   	<%= link_to "New Photo", new_user_photo_inspired_path(@user_id) %>
+   	<%= link_to "New Photo", new_user_photo_inspired_path(@user_id), :class => "new-photo" %>
    	<br>
    	<br>
 <form class="photography-prompt" action="/users/<%= @user_id %>/photo_inspireds" method="post"> 

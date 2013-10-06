@@ -189,6 +189,10 @@ h1, h2, h3, h4 {
   text-decoration: none;
 }
 
+.new-photo {
+  line-height: 34px;
+}
+
 .photography-show {
   max-width: 550px;
   padding: 19px 29px 29px;
