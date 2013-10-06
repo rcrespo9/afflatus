@@ -251,6 +251,10 @@ h1, h2, h3, h4 {
   border: 0;
 }
 
+#submit-edit-photo {
+  margin-bottom: 19px;
+}
+
 .photo-edit td { 
   padding: 16px;
 }
@@ -380,6 +384,10 @@ h1, h2, h3, h4 {
 
 .classical-music-edit td { 
   padding: 16px;
+}
+
+#submit-edit-music {
+  margin-bottom: 19px;
 }
 /*end classical music*/
 

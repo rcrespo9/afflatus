@@ -27,12 +27,11 @@
 	
 	<table>
 	<tr>	
-	<td><button type="submit" class="btn btn-primary">Submit</button><br></td>
+	<td><button type="submit" class="btn btn-primary" id="submit-edit-music">Submit</button></td>
+<% end %>
 	<td><%= button_to "Delete", user_music_inspired_path(@music_inspired), :class=>'btn btn-primary', :data => { :confirm => "Are you sure?" }, :method => :delete %></td>
 	</tr>
 	</table>
-	<br>
-<% end %>
 </div>
 </div>
 <a href="/users/<%= @user.id %>/music_inspireds/<%= @music_inspired.id %>">Cancel</a>

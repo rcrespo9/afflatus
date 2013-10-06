@@ -24,12 +24,11 @@
 	
 	<table>
 	<tr>	
-	<td><button type="submit" class="btn btn-primary">Submit</button><br></td>
-	<td><%= button_to "Delete", user_photo_inspired_path(@photo_inspired), :class=>'btn btn-primary', :data => { :confirm => "Are you sure?" }, :method => :delete %></td>
-	</tr>
-	</table>
-	<br>
+	<td><button type="submit" class="btn btn-primary" id="submit-edit-photo">Submit</button></td>	
 <% end %>
+	<td><%= button_to "Delete", user_photo_inspired_path(@photo_inspired), :class=>'btn btn-primary', :data => { :confirm => "Are you sure?" }, :method => :delete %></td>
+   </tr>
+</table>
 </div>
 </div>
 <a href="/users/<%= @user.id %>/photo_inspireds/<%= @photo_inspired.id %>">Cancel</a>
