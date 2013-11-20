@@ -1,16 +1,16 @@
 <div class="photography-show container">
-<h1 class="text-center"><%= @photo_inspired.creation_title %></h4>
-<h3 class="text-center">by <%= @photo_inspired.writer_name %></h3>
-<br>
-<h4 class="text-center">Photo Description</h4>
-<p class="text-center"><%= @photo_inspired.img_desc %></p>
-<br>
-<br>	
-<p class="text-center"><%= @photo_inspired.writing %></p>
-<br>
-<br>
-<p class="text-center">
-<%= link_to("Back", user_path(@user)) %>&nbsp;&nbsp;&nbsp;&nbsp;
-<%= link_to "Edit", edit_user_photo_inspired_path(@user) if current_user && @user.id == current_user.id %>
-</p>
+	<h1 class="text-center"><%= @photo_inspired.creation_title %></h4>
+	<h3 class="text-center">by <%= @photo_inspired.writer_name %></h3>
+	<br>
+	<h4 class="text-center">Photo Description</h4>
+	<p class="text-center"><%= @photo_inspired.img_desc %></p>
+	<br>
+	<br>	
+	<p class="text-center"><%= @photo_inspired.writing %></p>
+	<br>
+	<br>
+	<p class="text-center">
+	<%= link_to("Back", user_path(@user)) %>&nbsp;&nbsp;&nbsp;&nbsp;
+	<%= link_to "Edit", edit_user_photo_inspired_path(@user) if current_user && @user.id == current_user.id %>
+	</p>
 </div>

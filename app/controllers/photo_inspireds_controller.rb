@@ -55,9 +55,9 @@ class PhotoInspiredsController < ApplicationController
 	end
 
 	private 
-  #prevents non-owners from editing someone else's creations
+  	#prevents non-owners from editing someone else's creations
     def verify_user
-  	@photo_inspired = PhotoInspired.find(params[:id])
-  	current_user.id == @photo_inspired.user_id ? @photo_inspired : redirect_to(root_url)
+	  	@photo_inspired = PhotoInspired.find(params[:id])
+	  	current_user.id == @photo_inspired.user_id ? @photo_inspired : redirect_to(root_url)
     end
 end

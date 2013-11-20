@@ -1,28 +1,28 @@
 <div class="profile container">
-<h1><%= @user.full_name %></h1>
-<br>
-<h4>Member Since</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.created_at %></p>
-<h4>Last Seen</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.last_sign_in_at %></p>
-<h4>Location</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.location %></p>
-<h4>About Me</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.about %></p>
-<br>
+	<h1><%= @user.full_name %></h1>
+	<br>
+	<h4>Member Since</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.created_at %></p>
+	<h4>Last Seen</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.last_sign_in_at %></p>
+	<h4>Location</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.location %></p>
+	<h4>About Me</h4> <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.about %></p>
+	<br>
 
-<% if !@user.photo_inspireds.empty? %>
-    <h3> Works Inspired by Photography</h3>
-    <% @user.photo_inspireds.each do |photo_inspired| %>     
-  <p><span class="glyphicon glyphicon-picture">&nbsp;</span><a href="/users/<%= @user.id %>/photo_inspireds/<%= photo_inspired.id %>"><%= photo_inspired.creation_title %></a></p>
-<% end %>
-<% end %>
-<br>
-<% if !@user.music_inspireds.empty? %>
-    <h3>Works Inspired by Classical Music</h3>
-<% @user.music_inspireds.each do |music_inspired| %>
- <p><span class="glyphicon glyphicon-music">&nbsp;</span><a href="/users/<%= @user.id %>/music_inspireds/<%= music_inspired.id %>"><%= music_inspired.creation_title %></a></p>
-<% end %>
-<% end %>
-<br>
-<br>
-<p class="text-center">
-<%= link_to "Edit Profile", edit_user_path(@user), :class => "edit-profile" if current_user && @user.id == current_user.id %>
-</p>
+	<% if !@user.photo_inspireds.empty? %>
+	    <h3> Works Inspired by Photography</h3>
+	    <% @user.photo_inspireds.each do |photo_inspired| %>     
+	  <p><span class="glyphicon glyphicon-picture">&nbsp;</span><a href="/users/<%= @user.id %>/photo_inspireds/<%= photo_inspired.id %>"><%= photo_inspired.creation_title %></a></p>
+	<% end %>
+	<% end %>
+	<br>
+	<% if !@user.music_inspireds.empty? %>
+	    <h3>Works Inspired by Classical Music</h3>
+	<% @user.music_inspireds.each do |music_inspired| %>
+	 <p><span class="glyphicon glyphicon-music">&nbsp;</span><a href="/users/<%= @user.id %>/music_inspireds/<%= music_inspired.id %>"><%= music_inspired.creation_title %></a></p>
+	<% end %>
+	<% end %>
+	<br>
+	<br>
+	<p class="text-center">
+	<%= link_to "Edit Profile", edit_user_path(@user), :class => "edit-profile" if current_user && @user.id == current_user.id %>
+	</p>
 </div>

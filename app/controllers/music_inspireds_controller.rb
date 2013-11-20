@@ -53,9 +53,9 @@ class MusicInspiredsController < ApplicationController
 	end
 
 	private 
-  #prevents non-owners from editing someone else's creations
+  	#prevents non-owners from editing someone else's creations
     def verify_user
-  	@music_inspired = MusicInspired.find(params[:id])
-  	current_user.id == @music_inspired.user_id ? @music_inspired : redirect_to(root_url)
+	  	@music_inspired = MusicInspired.find(params[:id])
+	  	current_user.id == @music_inspired.user_id ? @music_inspired : redirect_to(root_url)
     end
 end

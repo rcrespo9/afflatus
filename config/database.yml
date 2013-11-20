@@ -43,6 +43,7 @@ test:
   adapter: postgresql
   encoding: unicode
   database: afflatus_test
+  host: localhost
   pool: 5
   username: postgres
   password: password
