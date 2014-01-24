@@ -188,6 +188,14 @@ h1, h2, h3, h4 {
   padding: 2px 9px;
 }
 
+.photography .photography-prompt input[type=text] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 2px 9px;
+  width: 250px;
+}
+
 .photography .photography-prompt textarea {
    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
    font: normal 14px verdana;
@@ -320,6 +328,14 @@ h1, h2, h3, h4 {
   height: auto;
   margin-bottom: 15px;
   padding: 2px 9px;
+}
+
+.classical-music .classical-music-prompt input[type=text] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 2px 9px;
+  width: 250px;
 }
 
 .classical-music .classical-music-prompt textarea {

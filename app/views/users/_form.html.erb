@@ -1,15 +1,18 @@
 <div class="profile-edit border-form-div">
-<h2 class="text-center">Edit Profile</h2>
-<br>
-<%= form_for user do |f| %>
+	<h2 class="text-center">Edit Profile</h2>
+	<br>
+	<%= form_for user do |f| %>
 
-  <div><%= f.label "Location" %>
-  <%= f.text_field :location %></div>
-  <div><%= f.label "About Me" %>
-  <%= f.text_area :about, :rows => 8, :cols => 60 %></div>
-  <br>  
-  <%= f.submit :class=>'btn btn-primary' %>
- <% end %>
+	  <div>
+		  <%= f.label "Location" %>
+		  <%= f.text_field :location %>
+	  </div>
+	  <div>
+		  <%= f.label "About Me" %>
+		  <%= f.text_area :about, :rows => 8, :cols => 60 %>
+	  </div>
+	  <br>  
+	  <%= f.submit :class=>'btn btn-primary' %>
+
+	<% end %>
  <div>
-
-<!-- , html: {class: "" } -->

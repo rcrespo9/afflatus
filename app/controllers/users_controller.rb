@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 	end
 
     private 
-  	#prevents non-owners from editing someone else's blog posts
+  	#prevents non-owners from editing someone else's profile
     def verify_user
 	  	@user = User.find(params[:id])
 	  	current_user.id == @user.id ? @user : redirect_to(root_url)
