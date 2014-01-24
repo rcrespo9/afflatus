@@ -17,4 +17,4 @@ gem 'flickraw'
 
 gem 'soundcloud'
 
-gem "twitter-bootstrap-rails"
+gem 'uglifier'
