@@ -3,7 +3,7 @@ html {
 	min-height: 100%;
 }
 body {
-    background: url("/images/reignofstars.jpg") no-repeat center center fixed;
+    background: url("reignofstars.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -12,6 +12,16 @@ body {
 	background-color: #333;
 	font-family: "Oxygen", sans-serif;
 	min-height: 100%;
+}
+
+.nav>li>a {
+  color: #999999;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav>li>a:hover {
+  color: #fff;
+  background: transparent;
 }
 
 .marketing {
@@ -76,6 +86,7 @@ h1, h2, h3, h4 {
 
 .sign-out-button {
   border-radius: 20px;
+  margin-top: 3px;
 }
 
 .status {
@@ -118,6 +129,10 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
+.select_muse .muse {
+  margin-top: 7%;
+}
+
 .select_muse .muse_photo {
 	-webkit-filter: brightness(25%);
   -webkit-transition: all 1s ease;
@@ -138,6 +153,7 @@ h1, h2, h3, h4 {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
+    padding-left: 5%;
 }
 
 .select_muse .muse_music:hover {
