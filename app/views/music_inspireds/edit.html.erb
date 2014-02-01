@@ -1,22 +1,27 @@
-<div class="classical-music-edit container-fluid">
-	<h2 class="text-center">Edit Creation</h2>
+<div class="classical-music-edit container-fluid text-center">
+	<h2>Edit Creation</h2>
 	<br>
 	<div class="row-fluid">
-		<div class="col-md-4 col-md-offset-3">
+		<div class="col-lg-12">
 			<%= form_for [@user, @music_inspired] do |f| %>
 				<label for="music_inspired[creation_title]">Title</label>
+			<br>
 				<input type="text" name="music_inspired[creation_title]" value="<%= @music_inspired.creation_title %>"/>
 			<br>	
 				<label for="music_inspired[writer_name]">Your Name</label>
+			<br>
 				<input type="text" name="music_inspired[writer_name]" value="<%= @music_inspired.writer_name %>"/>
 			<br>
 				<label for="music_inspired[medium]">Medium</label>
+			<br>
 				<input type="text" name="music_inspired[medium]" value="<%= @music_inspired.medium %>"/>
 			<br>
 				<label for="music_inspired[song_title]">Song Title</label>
+			<br>
 				<input type="text" name="music_inspired[song_title]" value="<%= @music_inspired.song_title %>"/>
 			<br>
-				<label for="music_inspired[artist_name]">Artist's Name:</label>
+				<label for="music_inspired[artist_name]">Artist's Name</label>
+			<br>
 				<input type="text" name="music_inspired[artist_name]" value="<%= @music_inspired.artist_name %>"/>
 			<br>
 			<label for="photo_inspired[writing]">Writing</label><br>
@@ -24,14 +29,10 @@
 			</textarea>
 			<br>
 			<br>
-
-			<table>
-			<tr>	
-			<td><button type="submit" class="btn btn-primary" id="submit-edit-music">Submit</button></td>
+	
+			<button type="submit" class="btn btn-primary" id="submit-edit-music">Submit</button>
 			<% end %>
-			<td><%= button_to "Delete", user_music_inspired_path(@music_inspired), :class=>'btn btn-primary', :data => { :confirm => "Are you sure?" }, :method => :delete %></td>
-			</tr>
-			</table>
+			<%= button_to "Delete", user_music_inspired_path(@music_inspired), :class=>'btn btn-primary', :data => { :confirm => "Are you sure?" }, :method => :delete %>
 		</div>
 	</div>
 	<a href="/users/<%= @user.id %>/music_inspireds/<%= @music_inspired.id %>">Cancel</a>

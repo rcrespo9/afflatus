@@ -276,16 +276,8 @@ h1, h2, h3, h4 {
   text-decoration: none;
 }
 
-.photo-edit table {
-  border: 0;
-}
-
-#submit-edit-photo {
+.edit-photo-buttons {
   margin-bottom: 19px;
-}
-
-.photo-edit td { 
-  padding: 16px;
 }
 /*end photography*/
 
